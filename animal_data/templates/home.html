@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Домашняя страница{% endblock title %}
+{% block header %}О нас{% endblock header %}
+{% block content %}
+    <div class="row">
+        <div class="col-lg-6">
+            <img src='{% static "img/work.png" %}' width="640" heigt="480" class="rounded-lg img-fluid" alt="">
+            <h3>Суровые рабочие будни</h3>
+        </div>
+        <div class="col-lg-6">   
+            <img src='{% static "img/ourpets.jpg" %}' width="640" heigt="480" class="rounded-lg img-fluid" alt="">
+            <h3>Наши питомцы</h3>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <footer>
+    <div class="row">
+        <div class="col-12" style="background-color: rgb(186, 226, 233);">
+            <h2 class="text-center">Наши контакты</h2>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-3">
+            <h4 class="text-primary text-center">Сайт</h4>
+            <p class="text-center">http://priut_pets.com/</p>
+        </div>
+        <div class="col-sm-3">
+            <h4 class="text-primary text-center">Телефон</h4>
+            <p class="text-center">+7-458-456-2523</p>
+        </div>
+        <div class="col-sm-3">
+            <h4 class="text-primary text-center">Наш адрес</h4> 
+            <p class="text-center">г. Норильск<br> ул. Завенягина №124</p> 
+        </div>
+        <div class="col-sm-3"><br>
+            <p class="text-right" style="margin-top: 2rem;">&copy;&nbsp;Powered: by bootstrap & Django</p>
+        </div>
+    </div>
+</footer> 
+{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Собаки{% endblock title %}
+{% block header %}{{ dogs.name}}{% endblock header %}
+{% block content %}
+<div class="col-sm-3">
+    <div class="w-25 p-3">
+        <img src="{{ dogs.image_url}}" alt="img" height="400" width="400" class="rounded-lg border border-success">
+    </div>
+    <div class="w-auto p-3">
+        <!-- <ul class="list-group list-group-flush"> -->
+            <p>Кличка: {{dogs.name}}</p>
+            <p>Возраст (лет): {{dogs.age}}</li>
+            <p>Порода: {{dogs.breed}}</p>
+            <p>Описание: {{dogs.description}}</p>
+        <!-- </ul> -->
+    </div>
+</div>
+{% endblock content %}
